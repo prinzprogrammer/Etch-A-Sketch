@@ -18,14 +18,7 @@ function defaultGrid(total) {
     blackBtn.addEventListener("click", function () {
       box.style.backgroundColor = "";
       box.addEventListener("mouseover", function () {
-        /*this.style.backgroundColor = "black"; */
-        let boxColorState = (box.style.backgroundColor = "rgba(0, 0, 0, 0.5)");
-        if (boxColorState == boxColorState) {
-          boxColorState = "rgba(0, 0, 0, 1)";
-          box.addEventListener("mouseover", function () {
-            box.style.backgroundColor = boxColorState;
-          });
-        }
+        this.style.backgroundColor = "black";
       });
     });
     gridBtn.addEventListener("click", function () {
