@@ -6,6 +6,7 @@ const grid = {
 let total = grid.rows * grid.cols;
 const gridBtn = document.querySelector(".gridBtn");
 const blackBtn = document.querySelector(".blackBtn");
+const defBtn = document.querySelector(".defBtn");
 
 function defaultGrid(total) {
   for (let i = 0; i < total; i++) {
@@ -14,6 +15,10 @@ function defaultGrid(total) {
     box.className = "box";
     box.addEventListener("mouseover", function () {
       this.style.backgroundColor = "gray";
+    });
+    defBtn.addEventListener("click", function () {
+      box.style.backgroundColor = "";
+      box.style.backgroundColor = "gray";
     });
     blackBtn.addEventListener("click", function () {
       box.style.backgroundColor = "";
